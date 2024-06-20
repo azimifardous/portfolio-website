@@ -6,7 +6,14 @@ import {
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
-const Header = () => {
+const handleScroll = (ref) => {
+  window.scrollTo({
+    top: ref.current.offsetTop - 70,
+    behavior: "smooth",
+  });
+};
+
+const Header = ({ aboutRef, experiencesRef, projectsRef }) => {
   return (
     <>
       <div className="text-white">
@@ -19,23 +26,28 @@ const Header = () => {
           user-friendly digital solutions.
         </p>
       </div>
-      <nav className="mt-10 hidden lg:block">
+      <nav className="mt-10 hidden lg:block cursor-pointer">
         <ul className="text-primary">
-          <li className="flex items-center mb-2 opacity-50 hover:opacity-100 hover-effect">
+          <li
+            onClick={() => handleScroll(aboutRef)}
+            className="flex items-center mb-2 opacity-50 hover:opacity-100 hover-effect"
+          >
             <hr className="border-none bg-primary rounded-md w-[1cm] h-[1px] mr-2 line" />
-            <a href="#">ABOUT</a>
+            <a>ABOUT</a>
           </li>
-          <li className="flex items-center mb-2 opacity-50 hover:opacity-100 hover-effect">
+          <li
+            onClick={() => handleScroll(experiencesRef)}
+            className="flex items-center mb-2 opacity-50 hover:opacity-100 hover-effect"
+          >
             <hr className="border-none bg-primary rounded-md w-[1cm] h-[1px] mr-2 line" />
-            <a href="#">EXPERIENCES</a>
+            <a href="#experiences">EXPERIENCES</a>
           </li>
-          <li className="flex items-center mb-2 opacity-50 hover:opacity-100 hover-effect">
+          <li
+            onClick={() => handleScroll(projectsRef)}
+            className="flex items-center mb-2 opacity-50 hover:opacity-100 hover-effect"
+          >
             <hr className="border-none bg-primary rounded-md w-[1cm] h-[1px] mr-2 line" />
-            <a href="#">PROJECTS</a>
-          </li>
-          <li className="flex items-center opacity-50 hover:opacity-100 hover-effect">
-            <hr className="border-none bg-primary rounded-md w-[1cm] h-[1px] mr-2 line" />
-            <a href="#">CONTACT ME</a>
+            <a href="#projects">PROJECTS</a>
           </li>
         </ul>
       </nav>

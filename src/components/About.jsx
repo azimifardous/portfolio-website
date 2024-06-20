@@ -1,8 +1,8 @@
 import React from "react";
 
-const About = () => {
+const About = ({ aboutRef }) => {
   return (
-    <p className="text-myGray">
+    <p ref={aboutRef} id="about" className="text-myGray">
       In 2021, the coding bug bit me hard, and I dove headfirst into learning
       everything I could. Fueled by countless tutorials and a relentless
       curiosity, I've built over 50 projects from scratch.{" "}

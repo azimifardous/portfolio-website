@@ -2,9 +2,9 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
-const Projects = () => {
+const Projects = ({ projectsRef }) => {
   return (
-    <div className="mt-20">
+    <div id="projects" ref={projectsRef} className="mt-20">
       <div className="grid grid-cols-3 gap-5 text-myGray p-6 glassy">
         <div className="col-span-1">
           <img

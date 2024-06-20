@@ -2,9 +2,9 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
-const Experiences = () => {
+const Experiences = ({ experiencesRef }) => {
   return (
-    <div className="mt-20">
+    <div id="experiences" ref={experiencesRef} className="mt-20">
       <div className="grid grid-cols-3 gap-5 text-myGray p-6 glassy">
         <div className="col-span-1 opacity-70 text-sm">
           <h3>Jan. 2021 - Jul. 2021</h3>
