@@ -15,6 +15,12 @@ html {
   font-family: "Inter", sans-serif;
 }
 
+body {
+  background-color: #0b0c10;
+  width: 100vw;
+  height: 100vh;
+}
+
 .line {
   transition: width 0.3s ease;
 }
@@ -22,10 +28,37 @@ html {
   width: 2cm;
 }
 
+.glassy {
+  border-radius: 10px;
+}
+
+.glassy:hover .arrow {
+  transform: translate(5px, -5px) rotate(45deg);
+  color: #66fcf1;
+  transition: all 0.1s ease;
+}
+
+.glassy:hover img {
+  opacity: 100%;
+  transition: all 0.3s ease;
+}
+
 .glassy:hover {
-  /* From https://css.glass */
-  background: rgba(46, 2, 78, 0.11);
-  border-radius: 16px;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(102, 252, 241, 0.05);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(0px);
+  transition: all 0.5s ease;
+}
+
+.glassy:hover .title {
+  color: #66fcf1;
+}
+
+.arrow {
+  transform: rotate(45deg);
+}
+
+.resume:hover .arrow {
+  transform: translate(2px, -5px) rotate(45deg);
+  transition: all 0.1s ease;
 }
