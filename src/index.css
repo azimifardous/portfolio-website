@@ -62,3 +62,10 @@ body {
   transform: translate(2px, -5px) rotate(45deg);
   transition: all 0.1s ease;
 }
+
+.active {
+  opacity: 100%;
+}
+.active .line {
+  width: 2cm;
+}
