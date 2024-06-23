@@ -120,19 +120,22 @@ const Header = () => {
       </nav>
       <div className="flex justify-evenly items-center mt-5 lg:mt-10 text-[25px] lg:text-[30px] text-primary">
         <a
-          href="#"
+          href="https://github.com/azimifardous"
+          target="_blank"
           className="lg:opacity-50 lg:hover:opacity-100 lg:transition-all"
         >
           <FontAwesomeIcon icon={faGithub} />
         </a>
         <a
-          href="#"
+          href="https://www.linkedin.com/in/azimifardous/"
+          target="_blank"
           className="lg:opacity-50 lg:hover:opacity-100 lg:transition-all"
         >
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
         <a
-          href="#"
+          href="https://x.com/AzimiFardous"
+          target="_blank"
           className="lg:opacity-50 lg:hover:opacity-100 lg:transition-all"
         >
           <FontAwesomeIcon icon={faXTwitter} />

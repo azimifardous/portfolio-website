@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { Element } from "react-scroll";
+import resumePdf from "../assets/RESUME.pdf";
 
 const Experiences = () => {
   return (
@@ -26,7 +27,9 @@ const Experiences = () => {
           </div>
         </div>
         <div className="flex text-myGray mt-10 hover:text-primary hover:cursor-pointer transition-all resume">
-          <p className="mr-2">View Full Resume</p>
+          <a className="mr-2" href={resumePdf} download="resume.pdf">
+            View Full Resume
+          </a>
           <span className="arrow">
             <FontAwesomeIcon icon={faArrowUp} />
           </span>
