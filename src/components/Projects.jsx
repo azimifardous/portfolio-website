@@ -2,6 +2,9 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { Element } from "react-scroll";
+import NoteApp from "../assets/noteApp.png";
+import MemoryCard from "../assets/memoryCard.png";
+import GameHub from "../assets/gamehub.png";
 
 const Projects = () => {
   return (
@@ -11,7 +14,7 @@ const Projects = () => {
           <div className="grid grid-cols-3 gap-5 text-myGray p-6 glassy">
             <div className="col-span-1">
               <img
-                src="../src/assets/gamehub.png"
+                src={GameHub}
                 alt="GameHub"
                 className="rounded-lg opacity-50"
               />
@@ -53,7 +56,7 @@ const Projects = () => {
           <div className="grid grid-cols-3 mt-2 gap-5 text-myGray p-6 glassy">
             <div className="col-span-1">
               <img
-                src="../src/assets/noteApp.png"
+                src={NoteApp}
                 alt="NoteApp"
                 className="rounded-lg opacity-50"
               />
@@ -95,7 +98,7 @@ const Projects = () => {
           <div className="grid grid-cols-3 mt-2 gap-5 text-myGray p-6 glassy">
             <div className="col-span-1">
               <img
-                src="../src/assets/memoryCard.png"
+                src={MemoryCard}
                 alt="MemoryCard Game"
                 className="rounded-lg opacity-50"
               />
